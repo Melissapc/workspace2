@@ -1,0 +1,36 @@
+public class Constructors {
+	public static void main(String[] args) {
+		Constructors ziggy = new Constructors("ziggy", false);
+		if (ziggy.willBecomeBacon()) {
+			System.out.println("bacon for breakfast");
+		}
+
+		else {
+			System.out.println("eggs for breakfast");
+		}
+
+	}
+
+	private String name;
+	private boolean isSheepHerder;
+
+	public Constructors(String name, boolean canHeardSheep) {
+		this.name = name;
+		this.isSheepHerder = canHeardSheep;
+	}
+
+	public boolean willBecomeBacon() {
+		if (this.isSheepHerder)
+			return false;
+		else
+			return true;
+	}
+
+	//Constructors b = new Constructors("babe", false);
+	//Constructors r = new Constructors("Rasher", true);
+
+	// Imagine there is a pig instance called ziggy. Write code that will print
+	// “bacon for breakfast” if ziggy is destined to be turned into bacon, or
+	// “eggs for breakfast” if he is not.
+
+}

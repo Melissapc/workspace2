@@ -1,0 +1,36 @@
+class Pig {
+	public static void main(String[] args) {
+		Pig ziggy = new Pig("ziggy", true);
+		if (ziggy.willBecomeBacon()) {
+			System.out.println("bacon for breakfast");
+		}
+
+		else {
+			System.out.println("eggs for breakfast");
+		}
+
+	}
+
+	private String name;
+	private boolean isSheepHerder;
+
+	public Pig(String name, boolean canHeardSheep) {
+		this.name = name;
+		this.isSheepHerder = canHeardSheep;
+	}
+
+	public boolean willBecomeBacon() {
+		if (this.isSheepHerder)
+			return false;
+		else
+			return true;
+	}
+
+	Pig b = new Pig("babe", false);
+	Pig r = new Pig("Rasher", true);
+
+	// Imagine there is a pig instance called ziggy. Write code that will print
+	// “bacon for breakfast” if ziggy is destined to be turned into bacon, or
+	// “eggs for breakfast” if he is not.
+
+}
